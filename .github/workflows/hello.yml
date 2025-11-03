@@ -9,3 +9,5 @@ jobs:
         uses: actions/checkout@v4
       - name: Hello World
         run: echo "Hello, World Again! This is ${{ secrets.name }}"
+      - name: Print name length
+        run: echo "Secret length is ${#SECRET}"  # in bash
