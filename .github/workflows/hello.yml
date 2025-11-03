@@ -10,4 +10,4 @@ jobs:
       - name: Hello World
         run: echo "Hello, World Again! This is ${{ secrets.name }}"
       - name: Print name length
-        run: echo "Secret length is ${#SECRET}"  # in bash
+        run: echo "Secret length is ${#secrets.name}"  # in bash
